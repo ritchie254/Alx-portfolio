@@ -1,0 +1,33 @@
+<!DOCType html>
+<html>
+	<head>
+		<title>Signup page</title>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="../static/styles/signup.css" />
+	</head>
+	<body>
+		<div class="container">
+			<form action="{{ url_for('signup') }}" method="post">
+				<p>Register</p>
+				<input type="text" name="username" placeholder="Your username" required="" ><br>
+				<input type="email" name="email" placeholder="Your email" required=""><br>
+				<input type="password" name="password" placeholder="Your password" required=""><br>
+				<input type="password" name="confirmed_password" placeholder="Confirm password" required=""><br>
+				<input type="submit" value="Sign up"><br>
+				<div class="link">
+					<a href="{{ url_for('login') }}" >Already have account? Login</a>
+									                        </div>
+			</form>
+			<div class="drops">
+				<div class="drop drop-1"></div>
+				<div class="drop drop-2"></div>
+				<div class="drop drop-3"></div>
+				<div class="drop drop-4"></div>
+				<div class="drop drop-5"></div>
+				<div class="drop drop-6"></div>
+				<div class="drop drop-7"></div>
+				<div class="drop drop-8"></div>
+			</div>
+		</div>
+	</body>
+</html>
