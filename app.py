@@ -20,7 +20,7 @@ def login():
         password = request.form['password'].lower()
         user = {"email":email, "password":password}
         all_user.append(user)
-        return redirect(url_for("dashboard")), 201
+        return redirect('/')
     return render_template("login.html")
 
 @app.route("/signup", methods=["GET", "POST"], strict_slashes=False)
@@ -44,7 +44,6 @@ def reset():
     return render_template("password_reset.html")
 
 @app.route("/", strict_slashes=False)
-@app.route("/dashboard", strict_slashes=False)
 def dashboard():
     """
         displays the dashboard of the website

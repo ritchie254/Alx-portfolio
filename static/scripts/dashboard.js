@@ -182,10 +182,11 @@ const currencies = [
 	  "ZMW",
 	  "ZWL"
 ]
-let apiKey = "https://v6.exchangerate-api.com/v6/f42d212b4220532460f917a1/latest/USD";
+let api = "https://v6.exchangerate-api.com/v6/f42d212b4220532460f917a1/latest/USD";
 
 const fromDropDown = document.getElementById("from-currency-select");
 const toDropDown = document.getElementById("to-currency-select");
+const result = document.getElementById("result");
 
 currencies.forEach((currency) => {
 	const option = document.createElement("option");
@@ -210,16 +211,17 @@ let convertCurrency = () => {
 	const toCurrency = toDropDown.value;
 
 	if (amount.length != 0) {
-		fetch(apiKey)
+		fetch(api)
 			.then((resp) => resp.json())
 			.then((data) => {
 				let fromExchangeRate = data.conversion_rates[fromCurrency];
 				let toExchangeRate = data.conversion_rates[toCurrency];
 				const convertedAmount = (amount / fromExchangeRate) * toExchangeRate;
 				result.innerHTML = `${amount} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}`;
+
 			});
 	} else {
-		alert("enter amount");
+		alert("Enter amount to be converted");
 	}
 };
 

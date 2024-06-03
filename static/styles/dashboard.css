@@ -307,9 +307,10 @@ input#amount {
 	display: block;
 	width: 100%;
 	border: none;
+	text-align: center;
 	border-bottom; 2px solid #02002c;
 	border-radius: 25px;
-	color: #7a789d;
+	color: #000;
 	margin-bottom: 2em;
 	margin-top: 1em;
 	padding: 0.5em;
@@ -348,17 +349,18 @@ button {
 	width: 100%;
 	background-color: rgba(0,0,0,0.8);
 	padding: 1em 0;
-	border-radius; 0.5em;
+	border-radius; 20px;
 	margin-top: 2em;
 	color: #fff;
 	font-weight: 600;
 }
 
 .result {
-	font-size: 1.5em;
+	font-size: 2.1em;
 	text-align: center;
 	margin-top: 1.2em;
-	color: #02002c;
-	background-color: #e5dbff;
+	background-color: rgba(0,0,0,0.4);
 	padding: 0.8em 0;
+	border-radius: 25px;
+	color: #fff;
 }
