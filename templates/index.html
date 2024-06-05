@@ -1,0 +1,57 @@
+<!DOCType html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../static/styles/home.css">
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+		<title> currency converter</title>
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+				<div class="nav_logo">CURRENCYConverter</div>
+				<ul class="nav_links">
+					<li class="link"><a href="{{ url_for('home') }}">Home</a></li>
+					<li class="link"><a href="{{ url_for('about') }}">About</a></li>
+					<li class="link"><a href="#">Blog</a></li>
+					<li class="link"><a href="#">Contact Us</a></li>
+				</ul>
+				<button class="btn"><a href="{{ url_for('signup') }}">Register Now</a></button>
+			</nav>
+			<header class="header">
+				<div class="content">
+					<h1><span>ONE TAP</span><br />Currency Conversion</h1>
+					<p>
+						Our advanced currency converter supports up to 130 different currencies, providing accurate and real-time exchange rates from reliable financial sources. With a user-friendly interface, it allows seamless conversion for travelers, businesses, investors, and researchers. The tool offers detailed conversion breakdowns and access to historical data for trend analysis, making it a dependable choice for anyone needing precise currency information. Whether for international travel, financial operations, or academic research, our currency converter ensures a smooth and efficient experience.
+					</p>
+					<button class="btn"><a href="{{ url_for('dashboard') }}">Click For Free Trial</a></button>
+				</div>
+				<div class="image">
+					<span class="image_bg"></span>
+					<img src="../static/images/background.png">
+					<div class="image_content image_content_1">
+						<span><i class="ri-arrow-left-right-fill"></i></span>
+						<div class="details">
+							<h4>200,000+</h4>
+							<p> Daily Conversions</p>
+						</div>
+					</div>
+					<div class="image_content image_content_2">
+						<ul>
+							<li>
+								<span><i class="ri-check-double-line"></i></span>
+								No Premium Subscriptions
+							</li>
+							<li>
+								<span><i class="ri-check-double-line"></i></span>
+								Unlimited Number of Conversions
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			a new section
+		</div>
+	</body>
+</html>

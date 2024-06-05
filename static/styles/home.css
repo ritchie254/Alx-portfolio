@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif, serif;
+}
+
+.btn {
+	padding: 1rem 2rem;
+	outline: none;
+	border: none;
+	font-size: 1rem;
+	color: #fff;
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 15px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.btn:hover {
+	color: #fff;
+	background-color: rgba(0,0,0,0.6);
+	border: 1px solid #000;
+	border-radius: 16px;
+	box-shadow: 5px 10px 9px #000;
+}
+
+.btn a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+nav {
+	padding: 2rem 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.nav_logo {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color:#2b3240;
+}
+
+.nav_links {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.link a {
+	text-decoration: none;
+	color: rgba(0,0,0,1);
+	cursor: pointer;
+	transition: 0.3s;
+	font-size: 1.2rem;
+}
+
+.link a:hover {
+	text-transform: uppercase;
+	color: #9082f7;
+	font-weight: bold;
+
+}
+
+.header {
+	padding: 0 1rem;
+	flex: 1;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+	align-items: center;
+}
+
+.content h1 {
+	margin-bottom: 1rem;
+	font-size: 3rem;
+	font-weight: 700;
+	color: #43597d;
+}
+
+.content h1 span {
+	font-weight: 800;
+	color: #7a3ce3;
+}
+
+.content p {
+	margin-bottom: 2rem;
+	color: #000;
+	line-height: 1.75rem;
+}
+
+.image {
+	position: relative;
+	text-align: center;
+	isolation: isolate;
+}
+
+.image_bg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 400px;
+	width: 400px;
+	background-color: #fff;
+	border-radius: 100%;
+	z-index: -1;
+}
+
+.image img {
+	max-width: 475px;
+	height: 475px;
+}
+
+.image_content {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	padding: 1rem 2rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	text-align: left;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+}
+
+.image_content_1 {
+	transform: translate(calc(-50% - 0rem), calc(-50% - 3rem));
+}
+
+.image_content_1 span{
+	padding: 10px 12px;
+	font-size: 1.5rem;
+	color: #fff;
+	background-color: #151d14;
+	border-radius: 100%;
+}
+
+.image_content_1 h4 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: rgba(0,0,0,1);
+}
+
+.image_content_1 p {
+	color: #071c3b;
+}
+
+.image_content_2 {
+	transform: translate(calc(-50% + 0rem), calc(-50% + 0rem));
+}
+
+.image_content_2 ul {
+	list-style: none;
+	display: grid;
+	gap: 1rem;
+}
+
+.image_content_2 li {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
+	color: #141d14;
+}
+.image_content_2 span {
+	font-size: 1.5rem;
+	color: #141d14;
+}

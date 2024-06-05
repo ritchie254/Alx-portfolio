@@ -4,7 +4,7 @@
 }
 
 body {
-	background: #465975;
+	background: #141d14;
 	font-family: "Montserrat", sans-serif;
 }
 
@@ -16,7 +16,7 @@ body {
 }
 
 form {
-	height: 460px;
+	height: 570px;
 	padding: 3em;
 	border-radius: 20px;
 	background: rgba(249, 217, 193,0.4);
@@ -38,7 +38,7 @@ p {
 input {
 	background: transparent;
 	width: 220px;
-	font-size: 0.9em;
+	font-size: 1.2em;
 	color: #fff;
 	padding: 1em;
 	margin-bottom: 2em;
@@ -141,5 +141,5 @@ input[type="submit"] {
 }
 
 .link a {                                                                                                                                                                               color: rgba(255, 255, 255, 0.6);
-	font-size: 13px;
+	font-size: 20px;
 	text-decoration: none;                                                          }
